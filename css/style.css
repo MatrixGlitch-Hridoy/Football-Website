@@ -11,6 +11,24 @@ Common Style
 body {
   font-family: "Poppins", sans-serif;
 }
+/* Button and Navbar Shake Animation */
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(2px, -1px) rotate(2deg);
+  }
+  100% {
+    transform: translate(-1px, 1px) rotate(-1deg);
+  }
+}
 /*==================
    Header Area Style
 ===================== */
@@ -34,9 +52,15 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+.links li:hover {
+  animation: shake 0.6s infinite;
+}
 .login {
   background-color: #e02c6d;
   padding: 10px 24px;
+}
+.login:hover {
+  animation: shake 0.6s infinite;
 }
 .login a {
   color: #fff;
@@ -67,6 +91,9 @@ body {
   color: #fff;
   font-size: 16px;
 }
+.watch:hover {
+  animation: shake 0.6s infinite;
+}
 
 .heading {
   font-size: 64px;
@@ -76,6 +103,9 @@ body {
 .banner-image img {
   width: 556.01px;
   height: 438px;
+}
+.banner:hover .banner-image {
+  animation: shake 0.6s infinite;
 }
 /* ===============
 Blog Area Style
