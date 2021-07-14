@@ -178,3 +178,72 @@ footer Area Style
   color: #969bab;
   width: 17px;
 }
+
+/* =====================
+Media Queries
+======================== */
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  .banner {
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    padding: 10px;
+  }
+  .banner-heading {
+    width: 100%;
+    margin-left: 5%;
+  }
+  .heading {
+    font-size: 36px;
+    width: 70%;
+  }
+  .watch {
+    margin-bottom: 30px;
+  }
+  .banner-image {
+    width: 100%;
+    padding: 5%;
+  }
+  .banner-image img {
+    width: 100%;
+  }
+
+  .blog-area {
+    width: 100%;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5%;
+  }
+  .feature-area {
+    width: 100%;
+    padding: 20px;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .feature-heading {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .feature-banner img {
+    width: 100%;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-logo img {
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
