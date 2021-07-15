@@ -37,9 +37,12 @@ body {
 }
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 30px 0;
+}
+.menu {
+  margin-right: 12%;
 }
 .links {
   display: flex;
@@ -73,7 +76,7 @@ body {
 */
 .banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding-bottom: 86px;
 }
@@ -241,10 +244,11 @@ Media Queries
 
   .blog-area {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
-    padding: 5%;
   }
   .feature-area {
     width: 100%;
@@ -262,6 +266,9 @@ Media Queries
     font-size: 30px;
     margin-top: 40px;
   }
+  .feature-detail {
+    text-align: justify;
+  }
   .feature-banner img {
     width: 100%;
   }
@@ -275,5 +282,42 @@ Media Queries
 
   .navbar {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header-area {
+    width: 992px;
+  }
+  .banner {
+    width: 100%;
+  }
+  main {
+    width: 980px;
+  }
+  .blog-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+  }
+  .player-info {
+    text-align: justify;
+  }
+  .feature-area {
+    width: 980px;
+  }
+  .feature {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .feature-detail {
+    text-align: justify;
+  }
+  .footer-area {
+    width: 980px;
   }
 }
